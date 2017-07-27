@@ -1,0 +1,44 @@
+
+<div class="jumbotron text-center">
+  <h1>Crowling</h1> 
+  <p>Add proper URL and get site data.</p> 
+  <%= form_tag(get_data_path, {:class=>"form-inline", :remote => true}) do %>
+  	<div class="input-group">
+  		<%= text_field_tag :url, params[:url], :placeholder => "http://immensesolusoft.com", :class=>"form-control", :required => true,:size=>"50" %>
+  		<div class="input-group-btn">
+        <%= submit_tag "Get Data", class: "btn btn-success" %>
+      </div>
+  		
+  	</div>	
+  <%end%>
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Site Snapshot</h2><br>
+    </div>
+    <div class="col-sm-6">
+      <div class="thumbnail">
+        <img src="site_image.png" alt="Paris" width="400" height="300">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="Site_image" class="container-fluid text-center bg-grey">
+  <h2>Images</h2><br>
+  <div class="row text-center slideanim slide">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="site_image.png" alt="Paris" width="400" height="300">
+        <p><strong>Paris</strong></p>
+        <p>Yes, we built Paris</p>
+      </div>
+    </div>
+  </div><br>
+</div>
+
+<!-- Container (Portfolio Section) -->
+
+
